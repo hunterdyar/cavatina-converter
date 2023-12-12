@@ -59,6 +59,7 @@ def getLayout():
 
 def get_locale():
     if os.name == 'posix':
+        return "US"
         from subprocess import check_output
         kl = check_output(["osascript", "-e", 'tell application "System Events" to tell process "SystemUIServer" to get the value of the first menu bar item of menu bar 1 whose description is "text input"'])
         return kl

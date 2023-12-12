@@ -1,9 +1,8 @@
-
 import re
 from .symbols import *
 from .semantics import *
 from .structures import *
-from ..keyboard_layout import inputTranslate
+from cavatina.keyboard_layout import inputTranslate
 
 def get_stringPosition(index, stack, expr):
     if len(stack[index]) > 1:

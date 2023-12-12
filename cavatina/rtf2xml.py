@@ -1,9 +1,9 @@
+from cavatina import translator
+
 if __name__ == '__main__':
     import sys, os
-
     if len(sys.argv) >= 2:
-        from language.syntax import parse
-        import translator
+        from .syntax import parse
 
         # input path
         filepath = sys.argv[1]

@@ -1,7 +1,7 @@
 from music21 import stream, note, chord, key, meter, bar, dynamics, tie, repeat, spanner, layout, metadata, tempo, \
     instrument
 
-from .language.structures import Note, Chord, Rest, KeySignature, Dynamic, BoldSystemicBarline, TimeSignature, MeasureEnd, RepeatFrom, RepeatTo, End, SystemicBarline, SectionEnd, GradualDynamic, RepeatSectionStart, RepeatSectionEnd, Coda, Segno, FromTo, OctavationStart, OctavationEnd, GrandStaff, Newline
+from .structures import Note, Chord, Rest, KeySignature, Dynamic, BoldSystemicBarline, TimeSignature, MeasureEnd, RepeatFrom, RepeatTo, End, SystemicBarline, SectionEnd, GradualDynamic, RepeatSectionStart, RepeatSectionEnd, Coda, Segno, FromTo, OctavationStart, OctavationEnd, GrandStaff, Newline
 
 def create_m21Note(nobj):
     n = note.Note(nobj.get_m21name(), quarterLength=nobj.get_quarterLength())

@@ -1,6 +1,6 @@
 import unittest
 from music21 import *
-from .language.syntax import parse
+from .syntax import parse
 from .translator import translateToMusic21
 
 testStrings = {
